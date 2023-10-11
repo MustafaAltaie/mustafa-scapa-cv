@@ -1,0 +1,214 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    user-select: none;
+    outline: none;
+    font-weight: normal;
+}
+body{
+    background: #000;
+    background-size: 200%;
+    overflow: hidden;
+}
+#hoveringLight{
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    background: #f10;
+    left: 0;
+    transform: translateX(-300%);
+    box-shadow: 0 0 100px #f10, 0 0 100px #f10, 0 0 100px #f10, 0 0 100px #f10;
+    animation: backLight 20s ease-in-out infinite;
+}
+
+@keyframes backLight {
+    0% {
+        left: 0;
+        transform: translateX(-300%);
+    }
+    100% {
+        left: 100%;
+        transform: translateX(300%);
+    }
+}
+
+#backgroundImage{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+input, button, textarea, p{
+    font-size: 20px;
+}
+img{
+    pointer-events: none;
+}
+li:nth-child(3) > a{
+    color: #ffcc67;
+}
+
+main{
+    position: absolute;
+    top: 12%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    overflow: hidden;
+}
+#section1, #section2{
+    width: 80%;
+    transform: translateX(5%);
+}
+#section1{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    height: 400px;
+    background: linear-gradient(150deg, #111 50%, #191919 40%);
+    border-radius: 20px 20px 0 0;
+    border: solid 1px rgba(255, 157, 0, 0.5);
+}
+#section1 > input, #section1 > textarea{
+    border: none;
+    border-bottom: solid 1px rgba(255, 157, 0, 0.2);
+    color: rgba(255, 157, 0, 1);
+    padding: 5px 0;
+    background: #151515;
+}
+#section1 > input{
+    background: rgba(0, 0, 0, 0);
+}
+#section1 > input::-webkit-input-placeholder, #section1 > textarea::-webkit-input-placeholder{
+    color: rgba(255, 157, 0, 0.5);
+    font-family: 'Barlow Semi Condensed', sans-serif;
+}
+#section1 > textarea{
+    position: absolute;
+    border: solid 1px rgba(255, 157, 0, 0.5);
+    padding: 10px;
+    resize: none;
+    height: 145px;
+    width: 80%;
+    font-family: 'Bad Script', cursive;
+    border-radius: 15px;
+    top: 190px;
+    left: 7.5%;
+    transition: 1s;
+}
+#sendButton{
+    position: absolute;
+    height: 40px;
+    font-family: 'Barlow Semi Condensed', sans-serif;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 85%;
+    border-radius: 5px;
+    border: none;
+    background: rgb(158, 110, 32);
+    font-weight: bold;
+}
+#sendButton:hover{
+    background: rgb(194, 135, 40);
+}
+
+#section2{
+    background: #9e6e20;
+    padding: 20px;
+    text-align: center;
+    transform-origin: top;
+    transform: perspective(900px) rotateX(180deg);
+    border-radius: 0 0 20px 20px;
+    margin-left: 5%;
+}
+#section2 > h1{
+    margin-bottom: 20px;
+    font-size: 35px;
+}
+#section2 > div{
+    margin-top: 20px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+#section2 > div a{
+    margin-left: 5px;
+}
+#thanksToContactUs{
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #c11f1f;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+
+@media (min-width: 1024px){
+    body{
+        background-size: 100%;
+        overflow: hidden;
+    }
+    input, button, textarea, p{
+        font-size: 16px;
+    }
+    main{
+        display: flex;
+        left: 60%;
+        top: 25%;
+        transform: translateX(-50%);
+        overflow: unset;
+    }
+    #section1, #section2{
+        width: unset;
+        transform: translateX(0%);
+    }
+    #section1{
+        height: 350px;
+        width: 50%;
+        border-radius: 20px 0 0 20px;
+        padding: 30px;
+        gap: 5px;
+    }
+    #section1 > textarea{
+        width: 70%;
+        height: 120px;
+        top: 160px;
+        left: 12.5%;
+    }
+    #section1 > button{
+        bottom: 40px;
+    }
+    #thanksToContactUs{
+        top: 200px;
+    }
+    
+    #section2{
+        transform-origin: left;
+        width: 50%;
+        transform: perspective(1900px) rotateY(-180deg);
+        border-radius: 0 20px 20px 0;
+        padding: 80px;
+        box-sizing: border-box;
+        margin-left: unset;
+    }
+    #section2 > div{
+        margin: 20px 0 -30px 0;
+        padding-top: 20px;
+        justify-content: space-around;
+        gap: 30px;
+    }
+    #section2 > div a{
+        margin-left: 5px;
+    }
+}

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <link rel="stylesheet" href="Css/header-style.css">
+    <link rel="stylesheet" href="Css/contact-style.css">
+
+    <script src="https://kit.fontawesome.com/f80359c2af.js" crossorigin="anonymous"></script>
+    <!-- Google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@200&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bad+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id="hoveringLight"></div>
+    <img src="Images/background.png" alt="background" id="backgroundImage">
+    <header id="header">
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="#">CONTACT</a></li>
+            </ul>
+        </nav>
+        <img src="Images/logo.png" alt="Logo" id="logo">
+    </header>
+
+    <main>
+        <section id="section1">
+            <h3 id="thanksToContactUs">Thanks</h3>
+            <input placeholder="Your name" id="senderName">
+            <input placeholder="Number or Email">
+            <input placeholder="Subject">
+            <textarea id="messagebox" placeholder="Message" spellcheck="false"></textarea>
+            <button onclick="sendMessage()" id="sendButton">Send</button>
+        </section>
+        <section id="section2">
+            <h1>Contact us</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate temporibus iure nisi velit aspernatur, eius provident consectetur aliquam cum accusantium distinctio totam alias suscipit pariatur cumque? Necessitatibus doloremque eum id?</p>
+            <div>
+                <i class="fas fa-map-marker-alt"><a>Katrineholm</a></i>
+                <i class="fas fa-phone"><a>Number</a></i>
+                <i class="fas fa-envelope"><a>Email</a></i>
+            </div>
+        </section>
+    </main>
+
+    <script src="JavaScript/scrollScript.js"></script>
+    <script src="JavaScript/mustafaButton.js"></script>
+    <script src="JavaScript/contact-script.js"></script>
+</body>
+</html>

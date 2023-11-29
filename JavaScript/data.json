@@ -1,0 +1,112 @@
+{
+    "profile": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat deleniti voluptatem eum? Consequuntur delectus esse veritatis aliquid reprehenderit?",
+    "contactInformation": [
+        {
+            "number": "<span>Mobile: </span>0791234567"
+        },
+        {
+            "number2": "<span>Phone: </span>0798765432"
+        },
+        {
+            "email": "<span>Email: </span>mustafa.altaie@chasacademy.se"
+        },
+        {
+            "email2": "<span>Email: </span>mustafaphoto111@gmail.com"
+        },
+        {
+            "adress": "<span>Address: </span>Sodermanland - Katrineholm"
+        },
+        {
+            "website": "<span>Website: </span>www.mustafaaltaie.com"
+        },
+        {
+            "website2": "<span>Website: </span>www.mustafaaltaie2.com"
+        }
+    ],
+    "experiences": [
+        {
+            "title": "Experience1 title",
+            "date": "01/06/2021",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat deleniti voluptatem eum? Consequuntur delectus esse veritatis aliquid reprehenderit?"
+        },
+        {
+            "title": "Experience2 title",
+            "date": "10/03/2023",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat deleniti voluptatem eum? Consequuntur."
+        }
+    ],
+    "educations": [
+        {
+            "title": "education1 title",
+            "date": "01/06/2021",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat deleniti voluptatem eum? Consequuntur delectus."
+        },
+        {
+            "title": "education2 title",
+            "date": "10/03/2023",
+            "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat deleniti voluptatem eum? Consequuntur delectus esse veritatis aliquid reprehenderit? ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati quaerat deleniti voluptatem eum?"
+        }
+    ],
+    "skills": [
+        {
+            "HTML": "90"
+        },
+        {
+            "CSS": "80"
+        },
+        {
+            "JavaScript": "85"
+        },
+        {
+            "Node.js": "70"
+        },
+        {
+            "Express.js": "75"
+        },
+        {
+            "MongoDB": "65"
+        },
+        {
+            "SQL Server": "20"
+        },
+        {
+            "Git": "50"
+        },
+        {
+            "React, Vue": "10"
+        },
+        {
+            "Photoshop": "95"
+        },
+        {
+            "Video editing": "80"
+        }
+    ],
+    "hobbies": {
+        "icons": [
+            "fas fa-code",
+            "fas fa-running",
+            "fas fa-swimmer",
+            "fas fa-user-ninja",
+            "fas fa-plane",
+            "fas fa-tv",
+            "fas fa-gamepad",
+            "fas fa-dumbbell",
+            "fas fa-dumbbell",
+            "fas fa-utensils"
+        ],
+        "titles": [
+            "Coding",
+            "Sports",
+            "Swimming",
+            "Martial arts",
+            "Traveling",
+            "Watching TV",
+            "Playing games",
+            "Gym",
+            "Fitness classes",
+            "Food"
+        ]
+    }
+}
+    

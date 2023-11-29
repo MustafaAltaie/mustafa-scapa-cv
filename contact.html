@@ -3,10 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Mustafa Altaie webpage">
     <title>Contact</title>
     <link rel="stylesheet" href="Css/header-style.css">
     <link rel="stylesheet" href="Css/contact-style.css">
-
+    <!-- Font awesome icons -->
     <script src="https://kit.fontawesome.com/f80359c2af.js" crossorigin="anonymous"></script>
     <!-- Google fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +20,7 @@
 </head>
 <body>
     <div id="hoveringLight"></div>
-    <img src="Images/background.png" alt="background" id="backgroundImage">
+    <img src="Images/background.webp" alt="background" id="backgroundImage">
     <header id="header">
         <nav>
             <ul>
@@ -28,17 +29,17 @@
                 <li><a href="#">CONTACT</a></li>
             </ul>
         </nav>
-        <img src="Images/logo.png" alt="Logo" id="logo">
+        <img src="Images/logo.webp" alt="Logo" id="logo">
     </header>
 
     <main>
         <section id="section1">
             <h3 id="thanksToContactUs">Thanks</h3>
-            <input placeholder="Your name" id="senderName">
-            <input placeholder="Number or Email">
+            <input placeholder="Your name*" id="senderName" class="yellow" required>
+            <input placeholder="Number or Email*" id="senderEmail" required>
             <input placeholder="Subject">
-            <textarea id="messagebox" placeholder="Message" spellcheck="false"></textarea>
-            <button onclick="sendMessage()" id="sendButton">Send</button>
+            <textarea id="messagebox" placeholder="Message*" spellcheck="false" required></textarea>
+            <button id="sendButton">Send</button>
         </section>
         <section id="section2">
             <h1>Contact us</h1>
@@ -51,7 +52,6 @@
         </section>
     </main>
 
-    <script src="JavaScript/scrollScript.js"></script>
     <script src="JavaScript/mustafaButton.js"></script>
     <script src="JavaScript/contact-script.js"></script>
 </body>

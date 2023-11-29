@@ -50,10 +50,50 @@ img{
     opacity: 0;
     transition: transform 0.5s ease-in-out, opacity 0.5s linear 0.2s;
 }
+#checkBox10{
+    position: absolute;
+    right: 110px;
+    top: 130%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 28px;
+    background: linear-gradient(#000, #222);
+    border: solid 1px #000;
+    white-space: nowrap;
+    box-shadow: 0 -1px 1px #333;
+}
+#checkBox10 > p{
+    margin: -27px 0 0 60px;
+    color: #f11;
+    font-size: 17px;
+    pointer-events: none;
+}
+#termButton10{
+    position: relative;
+    left: -1px;
+    width: 60%;
+    height: 100%;
+    background-image: linear-gradient(#333, #111);
+    border-left: solid 1px #000;
+    border-right: solid 1px #000;
+    border-bottom: solid 1px #000;
+    transition: left 0.1s;
+}
+#TermLight10{
+    position: relative;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: #500;
+    width: 37%;
+    height: 40%;
+    border-radius: 50%;
+    transition: 0.3s ease-in-out;
+}
 
 
 #section1{
-    padding: 20px;
+    padding: 45px 20px 20px 20px;
 }
 #section1 > div{
     background: #232323;
@@ -116,8 +156,36 @@ img{
     transition: 0.5s;
 }
 
+#hobbyWrapperSmall{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    overflow-Y: scroll;
+    padding: 0 0 20px 0;
+    margin-top: 20px;
+    max-height: 200px;
+}
+#hobbyWrapperSmall i{
+    background: #333;
+    border: solid 1px #ffcc0088;
+    box-shadow: none;
+}
+.hobby{
+    background: #6f5000;
+    display: flex;
+    align-items: center;
+    padding: 10px 25px 10px 10px;
+    border-radius: 40px;
+    border: solid 1px #ffcc0088;
+    width: 48%;
+    transition: 0.1s;
+}
 
 @media (min-width: 1024px){
+    #checkBox10{
+        right: 200px;
+        top: 50%;
+    }
     main{
         display: flex;
         padding: 45px 0;
@@ -165,6 +233,10 @@ img{
         flex: 1 1 100%;
         margin: 0 45px;
     }
+    .hobbyWrapper{
+        flex: 1 1 100%;
+        margin: 0 45px;
+    }
     .educationWrapper > div{
         width: 50%;
     }
@@ -190,6 +262,29 @@ img{
     }
     .skillContainer > div{
         margin: 20px 0;
+    }
+
+    #hobbyWrapperSmall{
+        flex-wrap: nowrap;
+        overflow-y: auto;
+        overflow-x: scroll;
+        padding: 10px 10px 20px 10px;
+    }
+    #hobbyWrapperSmall::-webkit-scrollbar{
+        height: 8px;
+    }
+    #hobbyWrapperSmall::-webkit-scrollbar-thumb{
+        background: linear-gradient(to right, #424381, #7a2541);
+        border-radius: 10px;
+    }
+    #hobbyWrapperSmall::-webkit-scrollbar-thumb:hover{
+        background: linear-gradient(to right, #5152a2, #8d3250);
+    }
+    .hobby:hover{
+        transform: scale(1.1);
+    }
+    .hobby > p{
+        white-space: nowrap;
     }
 
     .container:hover{

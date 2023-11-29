@@ -70,22 +70,26 @@ main{
     gap: 20px;
     padding: 20px;
     height: 400px;
-    background: linear-gradient(150deg, #111 50%, #191919 40%);
+    background: linear-gradient(170deg, #111 50%, #191919 40%);
     border-radius: 20px 20px 0 0;
     border: solid 1px rgba(255, 157, 0, 0.5);
 }
 #section1 > input, #section1 > textarea{
     border: none;
     border-bottom: solid 1px rgba(255, 157, 0, 0.2);
-    color: rgba(255, 157, 0, 1);
+    color: #ff9d00;
     padding: 5px 0;
     background: #151515;
 }
 #section1 > input{
     background: rgba(0, 0, 0, 0);
 }
+#section1 > input:-webkit-autofill{
+    -webkit-box-shadow: 0 0 0 30px #111 inset !important;
+    -webkit-text-fill-color: #ff9d00 !important;
+}
 #section1 > input::-webkit-input-placeholder, #section1 > textarea::-webkit-input-placeholder{
-    color: rgba(255, 157, 0, 0.5);
+    color: #ff9d0080;
     font-family: 'Barlow Semi Condensed', sans-serif;
 }
 #section1 > textarea{

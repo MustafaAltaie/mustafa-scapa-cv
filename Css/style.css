@@ -17,6 +17,15 @@ body::-webkit-scrollbar-thumb{
     background: rgb(166, 129, 27);
     border-radius: 10px;
 }
+#toProjectText{
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    color: #ca0;
+    font-size: 1.2em;
+    cursor: pointer;
+}
 img{
     pointer-events: none;
 }
@@ -28,7 +37,7 @@ li:nth-child(1) > a{
 }
 /* -------------- SECTION 1 -------------- */
 #section1{
-    background-image: url('../Images/backImage2.jpg');
+    background-image: url('../Images/backImage2.webp');
     background-size: 100% 100%;
 }
 .containWrapper1{
@@ -64,7 +73,7 @@ li:nth-child(1) > a{
 #section2 h1{
     padding: 50px 0;
     color: #fff;
-    background-image: url('../Images/signUp.jpg');
+    background-image: url('../Images/wallpaper.webp');
     border-top: 2px solid #711;
 }
 #project-wrapper{
@@ -83,25 +92,25 @@ li:nth-child(1) > a{
     gap: 10px;
     border-radius: 20px;
     transition: box-shadow 0.2s, transform 1s ease-in-out;
-    background-image: url('../Images/signUp.jpg');
+    background-image: url('../Images/wallpaper.webp');
     color: #fff;
     box-sizing: border-box;
-    box-shadow: 0 0 20px rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
 #project-wrapper > div:nth-child(1){
-    box-shadow: 0 0 20px rgb(27, 99, 255);
+    box-shadow: 0 0 10px rgb(27, 99, 255);
 }
 #project-wrapper > div:nth-child(2){
-    box-shadow: 0 0 20px rgb(0, 205, 0);
+    box-shadow: 0 0 10px rgb(0, 205, 0);
 }
 #project-wrapper > div:nth-child(3){
-    box-shadow: 0 0 20px rgb(238, 128, 255);
+    box-shadow: 0 0 10px rgb(238, 128, 255);
 }
 #project-wrapper > div:nth-child(4){
-    box-shadow: 0 0 20px rgb(255, 191, 0);
+    box-shadow: 0 0 10px rgb(255, 191, 0);
 }
 #project-wrapper > div:hover{
-    box-shadow: 0 0 20px rgb(255, 0, 0);
+    box-shadow: 0 0 10px rgb(255, 0, 0);
 }
 #project-wrapper > div:hover > img{
     transform: rotateZ(20deg);

@@ -3,7 +3,7 @@ let hr = experienceWrapper.getElementsByTagName('hr');
 
 // Fetching data from external json file.
 async function fetchingJsonData(){
-    let response = await fetch ('data.json');
+    let response = await fetch ('../JavaScript/data.json');
     let data = await response.json();
     profileText.textContent = data.profile;
     fetchingContactInfo(data);

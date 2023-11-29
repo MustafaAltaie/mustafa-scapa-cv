@@ -8,7 +8,7 @@ repository where I showcase my latest work and
 projects. Feel free to explore and get inspired!
 
 ## Installation
-Clone the repository:`git clone https://github.com/MustafaAltaie/scapa-dynamisk-sidacv-Mustafa.git`
+Clone the repository:`git clone https://github.com/MustafaAltaie/mustafa-scapa-cv.git`
 
 ## Usage
 Run the project from Visual Studio "go live"
